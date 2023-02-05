@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <!-- Google font: https://fonts.google.com/specimen/Poppins?query=poppin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- /Google font -->
+
+
+    <!-- CSS -->
+    <style>
+      /* 
+       * -- Reset Style Tag HTML
+       * hal pertama yang biasa dilakukan saat mengembangkan website adalah "reset style tag html".
+       * tag html itu punya default style seperti padding, margin, dll,
+       * jadi reset style berfungsi utuk menghilangkannya agar dalam proses pengembangan kita ga bingung "ko tiba-tiba ada margin/padding padahal gw ga kasih"
+       */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+
+      /** 
+       * -- Base Button Style
+       * ini berfungsi untuk membuat style base/dasar semua button kita.
+       *
+       * ~ tenang... style base ini masih bisa di replace kok
+       */
+      button {
+        border: none;
+        border-radius: 4px;
+        background: transparent;
+        cursor: pointer;
+        padding: 1rem;
+      }
+
+
+      /** animation-style-1 */
+      .animation-1 {
+        background: #eee;
+        transition: 500ms;
+      }
+
+      .animation-1:hover {
+        background: red;
+        color: white;
+      }
+      /** animation-style-1 */
+
+
+      /** animation-style-2 */
+      .animation-2 {
+        width: 150px;
+        transition: 1000ms;
+        background: red;
+        color: white;
+      }
+
+      .animation-2:hover {
+        background-color: purple;
+        width: 250px;
+      } 
+      /** animation-style-2 */
+
+
+      /** animation-style-3 */
+      .animation-3 {
+        background: #eee;
+      }
+
+      .animation-3:hover~.content-card {
+        opacity: 1!important;
+      }
+      /** animation-style-3 */
+    </style>
+    <!-- /CSS -->
+
+  </head>
+  <body style="max-width: 1200px; margin: 5rem auto; padding: 0 1rem;">
+    <header style="margin-bottom: 1rem;">
+      <h1>Animation</h1>
+    </header>
+
+    <main>
+      <div style="height: 100px; border: 1px solid #eee; margin-bottom: 1rem; padding: .5rem;">
+        <button class="animation-1">Animation 1</button>
+      </div>
+
+
+      <div style="height: 100px; border: 1px solid #eee; margin-bottom: 1rem; padding: .5rem;">
+        <button class="animation-2">Animation 2</button>
+      </div>
+
+
+      <div style="height: 100%; border: 1px solid #eee; margin-bottom: 1rem; padding: .5rem;">
+        <button class="animation-3">Animation 3</button>
+        <figure class="content-card" style="margin-top: 1rem; display: flex;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; border-radius: 8px; overflow: hidden; transition: 200ms; opacity: 0;">
+          <img src="./images/resident-evil-4.jpg" alt="Resident Evil 4" style=" width: 300px; object-fit: cover;">
+          <figcaption style="display: flex; flex-direction: column; gap: .5rem; padding: 1rem;">
+            <h2>Resident Evil 4</h2>
+            <p>Resident Evil 4 adalah game survival horror yang dikembangkan dan diterbitkan oleh Capcom. Ini adalah remake dari game 2005 Resident Evil 4, dijadwalkan rilis di PlayStation 4, PlayStation 5, Windows, dan Xbox Series X/S pada 24 Maret 2023. Pemain game mengikuti agen Leon S</p>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>

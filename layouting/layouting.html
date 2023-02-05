@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouting</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <!-- Google font: https://fonts.google.com/specimen/Poppins?query=poppin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- /Google font -->
+
+
+    <!-- CSS -->
+    <style>
+      /* 
+       * -- Reset Style Tag HTML
+       * hal pertama yang biasa dilakukan saat mengembangkan website adalah "reset style tag html".
+       * tag html itu punya default style seperti padding, margin, dll,
+       * jadi reset style berfungsi utuk menghilangkannya agar dalam proses pengembangan kita ga bingung "ko tiba-tiba ada margin/padding padahal gw ga kasih"
+       */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <!-- /CSS -->
+
+  </head>
+  <body style="max-width: 1200px; margin: auto;">
+    <header style="background-color: #0081C9; padding: 1rem; margin-bottom: .5rem; height: 150px;">
+      <p style="font-size: 32px; font-weight: 700; text-align: center; color: white;">HEADER</p>
+    </header>
+
+    <div style="display: flex; height: 700px;">
+      <aside style="background-color: #0081C9; padding: 1rem; width: 20%; margin-right: .5rem;">
+        <p style="font-size: 32px; font-weight: 700; text-align: center; color: white;">SIDEBAR</p>
+      </aside>
+  
+      <main style="background-color: #0081C9; padding: 1rem; width: 80%;">
+        <p style="font-size: 32px; font-weight: 700; text-align: center; color: white;">KONTENT</p>
+      </main>
+    </div>
+
+    <footer style="background-color: #0081C9; padding: 1rem; margin-top: .5rem;">
+      <p style="font-size: 32px; font-weight: 700; text-align: center; color: white;">FOOTER</p>
+    </footer>
+  </body>
+</html>
