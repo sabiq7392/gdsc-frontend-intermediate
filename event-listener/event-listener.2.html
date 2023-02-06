@@ -14,11 +14,11 @@
   
   <script>
     const form = document.querySelector("#myForm");
-    
-    form.addEventListener("submit", function(event) {
+
+    form.onsubmit = (event) => {
       event.preventDefault();
       alert("Form was submitted!");
-    });
+    }
   </script>
 </body>
 </html>
